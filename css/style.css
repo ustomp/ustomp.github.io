@@ -1,0 +1,32 @@
+body {
+margin: 5%;
+font-family: Monaco, monospace;
+font-size: 120%;
+color: black;
+background: #cc3300;
+}
+#header {
+padding: 2%;
+background: white;
+margin-bottom: 5px;
+}
+#branding{
+background: transparent url('../img/ustompLogo-200x120.png') top left no-repeat;
+min-height: 120px;
+padding-left: 200px;
+padding-bottom: 0.5em;
+vertical-align: bottom;
+}
+#content {
+padding: 2%;
+background: white;
+min-height: 50%;
+}
+
+#footer {
+background: white;
+padding: 2%;
+margin-top: 5px;
+font-size: 70%;
+}
+
