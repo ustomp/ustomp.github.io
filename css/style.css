@@ -1,10 +1,17 @@
 body {
 margin: 5%;
-font-family: Monaco, monospace;
+font-family: Verdana, sans-serif;
 font-size: 120%;
 color: black;
-background: #cc3300;
+background: #c30;
 }
+a:link,a:active,a:visited {
+color: black;
+}
+a:hover {
+color: #c30;
+}
+
 #header {
 padding: 2%;
 background: white;
@@ -20,7 +27,8 @@ vertical-align: bottom;
 #content {
 padding: 2%;
 background: white;
-min-height: 50%;
+min-height: 500px;
+font-size: 90%;
 }
 
 #footer {
