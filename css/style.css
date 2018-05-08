@@ -35,7 +35,13 @@ font-size: 90%;
 background: white;
 padding: 2%;
 margin-top: 5px;
-font-size: 70%;
+font-size: 80%;
+text-align: right;
+color: #c30;
+}
+
+#footer a {
+color: #c30;
 }
 
 .project {
