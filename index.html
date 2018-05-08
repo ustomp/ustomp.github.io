@@ -17,20 +17,15 @@
 
 <div id="projects" ng-app="projectsApp">
 <h2>Stompbox Projects:</h2>
-<div ng-controller="ProjectsListController as projectsList">
+<div ng-controller="ProjectsCtrl">
 
-<div class="project"  ng-repeat="project in projectsList.projects">
+<div class="project"  ng-repeat="project in projects">
 
 <h3><a href="{{project | urlBuilder}}">{{project.name}}</a></h3>
-
+<img height="200px" ng-src="{{project | urlBuilder:'thumb.gif':'raw'}}">
 <ul>
-<li><a href="{{project | urlBuilder:'build':'pdf'}}">Build Diagram</a></li>
-<li><a href="{{project | urlBuilder:'etch':'pdf'}}">Etch Template</a></li>
-<li><a href="{{project | urlBuilder:'inside':'jpg'}}">Inside</a></li>
-<li><a href="{{project | urlBuilder:'outside':'jpg'}}">Outside</a></li>
-<li><a href="{{project | urlBuilder:'schematic':'jpg'}}">Schematic</a></li>
+<li ng-repeat="artifact in project.artifacts"><a href="{{project | urlBuilder:artifact}}">{{artifact}}</a></li>
 </ul>
-<img height="200px" ng-src="{{project | urlBuilder:'thumb':'gif':'raw'}}">
 
 </div>
 

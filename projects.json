@@ -1,0 +1,44 @@
+[
+{"name":"Ampeg Scrambler", "shortName":"scrambler",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Boss FA-1", "shortName":"fa1",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"TS-808", "shortName":"808",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Boss SD-1", "shortName":"sd1",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Dr Quack", "shortName":"drquack",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Dual Orange Squeezer", "shortName":"dualsqueeze",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Kay Fuzztone", "shortName":"kayfuzz",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"MXR Dyna-Comp", "shortName":"dynacomp",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Maestro FSH-1A", "shortName":"fsh",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"PT-80 Delay", "shortName":"pt80",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Peppermill", "shortName":"peppermill",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Rat", "shortName":"rat",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Shin-Ei Fuzz", "shortName":"shinei",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+},
+{"name":"Unicord Super-Fuzz", "shortName":"superfuzz",
+"artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
+}
+]
