@@ -4,18 +4,39 @@
 <meta charset="UTF-8">
 <title>uStomp</title>
 <link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/projects.js"></script>
 </head>
 <body>
 <div id="header">
-<div id="branding">
-uStomp - Custom Musical Effects
-</div>
+	<div id="branding">
+	uStomp - Custom Musical Effects
+	</div>
 </div>
 
 <div id="content">
-Content is now hosted at:
-<br/>
-<a href="https://github.com/ustomp/pedals/">github.com/ustomp/pedals/</a>
+
+<div id="projects" ng-app="projectsApp">
+<h2>Stompbox Projects:</h2>
+<div ng-controller="ProjectsListController as projectsList">
+
+<div class="project"  ng-repeat="project in projectsList.projects">
+
+<h3><a href="{{project | urlBuilder}}">{{project.name}}</a></h3>
+
+<ul>
+<li><a href="{{project | urlBuilder:'build':'pdf'}}">Build Diagram</a></li>
+<li><a href="{{project | urlBuilder:'etch':'pdf'}}">Etch Template</a></li>
+<li><a href="{{project | urlBuilder:'inside':'jpg'}}">Inside</a></li>
+<li><a href="{{project | urlBuilder:'outside':'jpg'}}">Outside</a></li>
+<li><a href="{{project | urlBuilder:'schematic':'jpg'}}">Schematic</a></li>
+</ul>
+<img height="200px" ng-src="{{project | urlBuilder:'thumb':'gif'}}">
+
+</div>
+
+</div>
+</div> 
 </div>
 
 <div id="footer">
