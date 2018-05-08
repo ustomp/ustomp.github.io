@@ -41,5 +41,5 @@ font-size: 70%;
 .project {
 display: inline-block;
 padding: 2em;
-border-top: .25px dashed #eee;
+border: .25px dashed #eee;
 }
