@@ -45,9 +45,9 @@ color: #c30;
 }
 
 .project {
+vertical-align: top;
 display: inline-block;
 padding: 2em;
-border: .25px dashed #eee;
 }
 
 .container {
