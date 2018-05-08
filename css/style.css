@@ -18,9 +18,9 @@ background: white;
 margin-bottom: 5px;
 }
 #branding{
-background: transparent url('../img/ustompLogo-200x120.png') top left no-repeat;
-min-height: 120px;
-padding-left: 200px;
+background: transparent url('../img/ustompLogo.gif') top left no-repeat;
+min-height: 137px;
+padding-left: 382px;
 padding-bottom: 0.5em;
 vertical-align: bottom;
 }
