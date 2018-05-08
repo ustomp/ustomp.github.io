@@ -43,3 +43,14 @@ display: inline-block;
 padding: 2em;
 border: .25px dashed #eee;
 }
+
+.container {
+background: #c30;
+position: relative;
+}
+
+.beveled {
+border-top-right-radius: 4em;
+border-bottom-left-radius: 2em;
+}
+
