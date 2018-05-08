@@ -24,9 +24,11 @@ angular.module('projectsApp', [])
 	})
 	.filter('urlBuilder', function() {
 
-		return function(project, type, extension) {
+		return function(project, type, extension, format) {
 
-			var urlPrefix = 'https://github.com/ustomp/pedals/raw/master/';
+			var githubFormat = format || 'blob';
+
+			var urlPrefix = 'https://github.com/ustomp/pedals/' + githubFormat + '/master/';
 
 			var url = urlPrefix + project.name + '/';
 
