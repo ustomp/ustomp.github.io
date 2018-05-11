@@ -5,6 +5,7 @@
 <title>uStomp</title>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/rittdevcore.js"></script>
 <script src="js/projects.js"></script>
 </head>
 <body>
@@ -26,7 +27,7 @@
 <a href="{{project | urlBuilder}}"><img height="200px" ng-src="{{project | urlBuilder:'thumb.gif':'raw'}}"></a>
 
 <ul>
-<li ng-repeat="artifact in project.artifacts"><a href="{{project | urlBuilder:artifact}}">{{artifact}}</a></li>
+<li ng-repeat="artifact in project.artifacts"><a href="{{project | urlBuilder:artifact}}">{{artifact | humanizeFormat}}</a></li>
 </ul>
 
 </div>

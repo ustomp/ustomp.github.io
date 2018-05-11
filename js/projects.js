@@ -1,4 +1,4 @@
-var projectsApp = angular.module('projectsApp', []);
+var projectsApp = angular.module('projectsApp', ['rittdevCore']);
 
 projectsApp.controller('ProjectsCtrl', function($scope, projectRetriever) {
 
@@ -6,7 +6,6 @@ projectsApp.controller('ProjectsCtrl', function($scope, projectRetriever) {
 
 			$scope.projects = projects;
 		});
-
 });
 
 projectsApp.filter('urlBuilder', function() {
@@ -28,27 +27,35 @@ projectsApp.filter('urlBuilder', function() {
 		};
 });
 
-projectsApp.service('projectRetriever', function($http, $q) {
+projectsApp.filter('humanizeFormat', function() {
 
-		var deferred = $q.defer();
+	var map = {
+		'build':'Build Diagram',
+		'etch':'Etch Template',
+		'schematic': 'Schematic',
+		'buildetch': 'Build/Etch Diagram',
+		'inside': 'Interior Photo',
+		'outside': 'Exterior Photo',
+		'front': 'Interior Photo'
+	};
 
+	return function(format) {
 
-		$http.get('projects.json').then(function(response) {
-		
-			deferred.resolve(response.data);
+		var i = format.lastIndexOf('.');
 
-		}).catch(function(response) {
-		
-			console.error(response);
-
-			deferred.resolve([]);
-		});
-
-		this.getProjects = function() {
-
-			return deferred.promise;
-		}
-	
+		return map[format.slice(0,i)];
+	};
 });
 
+projectsApp.factory('projectRetriever', ['jsonRetriever', function(jsonRetriever) {
+
+		var o = {};
+
+		o.getProjects = function() {
+
+			return jsonRetriever.get('projects.js');
+		};
+
+		return o;
+}]);
 
