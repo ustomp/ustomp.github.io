@@ -29,6 +29,8 @@
 <ul>
 <li ng-repeat="artifact in project.artifacts"><a href="{{project | urlBuilder:artifact}}">{{artifact | humanizeFormat}}</a></li>
 </ul>
+<div class="projectDescription">{{project.description}}</div>
+<div ng-if="project.notes" class="projectNotes">{{project.notes}}</div>
 
 </div>
 

@@ -52,6 +52,7 @@ color: white;
 vertical-align: top;
 display: inline-block;
 padding: 2em;
+width: 225px;
 }
 
 .container {
@@ -64,3 +65,12 @@ border-top-right-radius: 4em;
 border-bottom-left-radius: 2em;
 }
 
+.projectDescription {
+font-size: 70%;
+margin-bottom: 1em;
+}
+
+.projectNotes {
+font-size: 50%;
+font-style: italic;
+}

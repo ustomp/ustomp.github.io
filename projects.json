@@ -1,44 +1,61 @@
 [
 {"name":"Ampeg Scrambler", "shortName":"scrambler",
+"description":"An out of hand octave fuzz w/ some ring modulation. This is my favorite fuzz pedal.",
+"notes":"I use 2N5306’s for Q1,Q3 & Q4. I use a 2N3904 for Q2.",
 "artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.jpg"]
 },
 {"name":"Boss FA-1", "shortName":"fa1",
+"description":"A clean boost pedal that is used by U2 guitarist \"The Edge\" This is a work-alike circuit as the original op-amps and FET are hard to come by.",
+"notes":"I used a 4558 for the IC and a J201 for the FET. Note that the 47uF cap is non-polar.",
 "artifacts":["buildetch.pdf","front.jpg","schematic.pdf"]
 },
 {"name":"TS-808", "shortName":"808",
+"description":"My layout of the classic Tube Screamer. This is a great overdrive.",
 "artifacts":["build.pdf","etch.pdf"]
 },
 {"name":"Boss SD-1", "shortName":"sd1",
+"description":"A lot like a tube screamer. The mid bump is a little higher up and it uses asymetric clipping.",
 "artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg"]
 },
 {"name":"Dr Quack", "shortName":"drquack",
+"description":"An envelope filter based on the Dr. Q.",
 "artifacts":["build.pdf","etch.pdf"]
 },
 {"name":"Dual Orange Squeezer", "shortName":"dualsqueeze",
+"description":"Two Orange Squeezers in series. It gives a really cool compressed tone with a subtle motion to it.",
 "artifacts":["buildetch.pdf"]
 },
 {"name":"Kay Fuzztone", "shortName":"kayfuzz",
+"description":"A great fuzz pedal. You can hear it on the opening to U2’s elevation and on Daniel Lanois’ song “Kay Fuzz”.",
+"notes":"I used a 2N5088 for Q1 and 2N3904’s for Q2-Q4. I used 1N914’s for the diodes.",
 "artifacts":["build.pdf","etch.pdf","inside.jpg","schematic.pdf"]
 },
 {"name":"MXR Dyna-Comp", "shortName":"dynacomp",
+"description":"The classic compressor.",
 "artifacts":["buildetch.pdf","inside.jpg","outside.jpg"]
 },
 {"name":"Maestro FSH-1A", "shortName":"fsh",
+"description":"A filter sample and hold pedal.",
 "artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg","schematic.gif"]
 },
 {"name":"PT-80 Delay", "shortName":"pt80",
+"description":"A pedal designed by Scott Swartz to emulate the sound of the old analog delay pedals.",
 "artifacts":["build.pdf","etch.pdf","schematic.pdf"]
 },
 {"name":"Peppermill", "shortName":"peppermill",
+"description":"A great overdrive from the guys at runoffgroove.com. It doesn’t have the low-mid bump that the Tube Screamer has. It sounds a lot like a cranked amp.",
 "artifacts":["build.pdf","etch.pdf"]
 },
 {"name":"Rat", "shortName":"rat",
+"description":"A classic distortion pedal.",
 "artifacts":["buildetch.pdf"]
 },
 {"name":"Shin-Ei Fuzz", "shortName":"shinei",
+"description":"Really simple nasty fuzz.",
 "artifacts":["build.pdf","etch.pdf","inside.jpg","outside.jpg"]
 },
 {"name":"Unicord Super-Fuzz", "shortName":"superfuzz",
+"description":"An octave fuzz pedal. it get’s very thick and big.",
 "artifacts":["build.pdf","etch.pdf","schematic.gif"]
 }
 ]
