@@ -10,16 +10,13 @@ projectsApp.controller('ProjectsCtrl', function($scope, projectRetriever) {
 
 projectsApp.filter('urlBuilderFilter', function() {
 
-		return function(project, artifact, format) {
+		return function(project, artifact) {
 
 			var urlPrefix = 'projects/';
 
 			var url = urlPrefix + project.name + '/';
 
-			if(artifact) {
-
-				url = url + project.shortName + artifact;
-			}
+			url = url + project.shortName + (artifact || project.artifacts[0]);
 
 			return url; 
 		};
