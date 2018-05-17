@@ -8,13 +8,11 @@ projectsApp.controller('ProjectsCtrl', function($scope, projectRetriever) {
 		});
 });
 
-projectsApp.filter('urlBuilder', function() {
+projectsApp.filter('urlBuilderFilter', function() {
 
 		return function(project, artifact, format) {
 
-			var githubFormat = format || 'blob';
-
-			var urlPrefix = 'https://github.com/ustomp/pedals/' + githubFormat + '/master/';
+			var urlPrefix = 'projects/';
 
 			var url = urlPrefix + project.name + '/';
 
@@ -27,7 +25,8 @@ projectsApp.filter('urlBuilder', function() {
 		};
 });
 
-projectsApp.filter('humanizeFormat', function() {
+
+projectsApp.filter('humanizeFormatFilter', function() {
 
 	var map = {
 		'build':'Build Diagram',
